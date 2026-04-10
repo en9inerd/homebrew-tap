@@ -1,26 +1,26 @@
 class Slop < Formula
-  desc "AI slop detector — finds AI-typical code defects using information theory"
+  desc "Code quality scanner — catches patterns linters miss"
   homepage "https://github.com/en9inerd/slop"
   license "MIT"
-  version "0.0.1"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/slop/releases/download/v0.0.1/slop_aarch64-macos"
-      sha256 "c1eccd6769f851f2e486048d52bb4740036542999ffd4ad887790ac0b938c043"
+      url "https://github.com/en9inerd/slop/releases/download/v0.1.0/slop_aarch64-macos"
+      sha256 "f77e4acd6828e4249351c49d31e59bfb57e511f2b562b02d130c98e0fabb05bb"
     else
-      url "https://github.com/en9inerd/slop/releases/download/v0.0.1/slop_x86_64-macos"
-      sha256 "bec46295eac1b1ead4c96413122f9507336de416cc3e245a7775b9f89c04ead2"
+      url "https://github.com/en9inerd/slop/releases/download/v0.1.0/slop_x86_64-macos"
+      sha256 "354165ca9ea52b5d8639e588509d3d112796c3de62ddd8f81e590f33ee4e20c8"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/slop/releases/download/v0.0.1/slop_aarch64-linux-musl"
-      sha256 "0d9531c0580cf2bee6c391d0e1557fff10460bb5ae2db0e23c6445832e38437a"
+      url "https://github.com/en9inerd/slop/releases/download/v0.1.0/slop_aarch64-linux-musl"
+      sha256 "2f2313d3d7b8f1d3306d0eb4c05be91eb383530f6f0e56ad3747998e6a608bca"
     else
-      url "https://github.com/en9inerd/slop/releases/download/v0.0.1/slop_x86_64-linux-musl"
-      sha256 "ff61107de58cf7f407041ac44a4f1cc69ae980b8daa4cfba23c56029fea69f9d"
+      url "https://github.com/en9inerd/slop/releases/download/v0.1.0/slop_x86_64-linux-musl"
+      sha256 "86db66964ce8a02cd8acf9f92d4e800a325c6d088eddd0071cc746baf6deb3d9"
     end
   end
 
