@@ -2,25 +2,25 @@ class ShhhCli < Formula
   desc "CLI for shhh E2E encrypted channels"
   homepage "https://github.com/en9inerd/shhh"
   license "MIT"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/shhh/releases/download/v0.3.0/shhh-cli-darwin-arm64"
-      sha256 "00445a764f1b7d910eafdd9fe855375906db5d2d5e7404740f4f3cb048f0f2d8"
+      url "https://github.com/en9inerd/shhh/releases/download/v0.3.1/shhh-cli-darwin-arm64"
+      sha256 "a51eec643fcde0f8902a64c9efefda2df008b8d8b4e7867382f11e1caa21bedb"
     else
-      url "https://github.com/en9inerd/shhh/releases/download/v0.3.0/shhh-cli-darwin-amd64"
-      sha256 "1c48465363a27828c22a7c31d843ab43eed7ea0c4b4d0ec7a9910c4c4fc5b22b"
+      url "https://github.com/en9inerd/shhh/releases/download/v0.3.1/shhh-cli-darwin-amd64"
+      sha256 "e40ff694d9f09ad0190106c15a05e58f41209d72acf74528ac8c558ac21ce7ca"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/shhh/releases/download/v0.3.0/shhh-cli-linux-arm64"
-      sha256 "67728ad64790eb132d64bc4710a258058c6679aeec6bfd5894395108a53c56a2"
+      url "https://github.com/en9inerd/shhh/releases/download/v0.3.1/shhh-cli-linux-arm64"
+      sha256 "d19e6bb10230c2643d40775085eefc1373839f35c6be27d728a852c590d157ec"
     else
-      url "https://github.com/en9inerd/shhh/releases/download/v0.3.0/shhh-cli-linux-amd64"
-      sha256 "695f7c86af147a92544d1eb73169401f3f4dd16c0b2a143d6d75817309c65690"
+      url "https://github.com/en9inerd/shhh/releases/download/v0.3.1/shhh-cli-linux-amd64"
+      sha256 "d1abb8812f7460953336462f0a9f6105be001927faadc4d860d30572b129d810"
     end
   end
 
