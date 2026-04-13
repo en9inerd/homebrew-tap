@@ -2,25 +2,25 @@ class Slop < Formula
   desc "Code quality scanner — catches patterns linters miss"
   homepage "https://github.com/en9inerd/slop"
   license "MIT"
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/slop/releases/download/v0.2.1/slop_aarch64-macos"
-      sha256 "3991c91651a2b5c78a3c7283b23df5da4402f25e4e9d8fa7eb2a656033024e46"
+      url "https://github.com/en9inerd/slop/releases/download/v0.2.2/slop_aarch64-macos"
+      sha256 "66738b7d40cdd8e4c75e778afcb3f44a0861c7258457009542144bd4b82c6092"
     else
-      url "https://github.com/en9inerd/slop/releases/download/v0.2.1/slop_x86_64-macos"
-      sha256 "7e72553d9812c8a46a487284a0bc26c9ec34072ae879f3a6a705e4d0f78437d1"
+      url "https://github.com/en9inerd/slop/releases/download/v0.2.2/slop_x86_64-macos"
+      sha256 "cbf39d4c6d1722a34c04d4b2e387beab6b38b771a93cfe82e8146b8a5242cba3"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/slop/releases/download/v0.2.1/slop_aarch64-linux-musl"
-      sha256 "6cd23aaab125b0cd183215bb4989f24662cfa41baa9963d044439a8b7ca89284"
+      url "https://github.com/en9inerd/slop/releases/download/v0.2.2/slop_aarch64-linux-musl"
+      sha256 "3e1ec4c13ae1b77237c6c6cfa81da3cfebf42f732ce99a8715124cab636b4345"
     else
-      url "https://github.com/en9inerd/slop/releases/download/v0.2.1/slop_x86_64-linux-musl"
-      sha256 "febe70eff17415fa88b655b651ddd119583dbe197de479dcc97ec0a6020d6a87"
+      url "https://github.com/en9inerd/slop/releases/download/v0.2.2/slop_x86_64-linux-musl"
+      sha256 "b6678c4294263eafaa72f5f7dfa8b74e85a72b00f6d31bbefa2fc662691cd8a4"
     end
   end
 
