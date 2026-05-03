@@ -2,25 +2,25 @@ class Ctype < Formula
   desc "Terminal typing test"
   homepage "https://github.com/en9inerd/ctype"
   license "MIT"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/ctype/releases/download/v0.1.1/ctype_aarch64-macos.tar.gz"
-      sha256 "09bb1a5e1ba08d6b1db9012efeebd37621befe7e3e7434724a59227ce25586a8"
+      url "https://github.com/en9inerd/ctype/releases/download/v0.1.2/ctype_aarch64-macos.tar.gz"
+      sha256 "a05f939cbc1935b4eb2c82f34cd2a0a38b2f2dfe6f2bd76a2fa633c2636ab0ba"
     else
-      url "https://github.com/en9inerd/ctype/releases/download/v0.1.1/ctype_x86_64-macos.tar.gz"
-      sha256 "8929e55d78a95e1b21cf554741e6a8067320877ee922814982ce4b26447ce6cd"
+      url "https://github.com/en9inerd/ctype/releases/download/v0.1.2/ctype_x86_64-macos.tar.gz"
+      sha256 "352e3d5bc37c579579c5887a5cab02e5b4f9d50b2c3f663973bd75b3cefc0245"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/ctype/releases/download/v0.1.1/ctype_aarch64-linux-musl.tar.gz"
-      sha256 "b46212928188fd1dbc932bb1ed2b6bfcb2290e49c9881f6391f647c13bfd0ff0"
+      url "https://github.com/en9inerd/ctype/releases/download/v0.1.2/ctype_aarch64-linux-musl.tar.gz"
+      sha256 "208a05aba26e9ebddbc119f44b44a1712948d1242a0fd7f70e291f7f21085538"
     else
-      url "https://github.com/en9inerd/ctype/releases/download/v0.1.1/ctype_x86_64-linux-musl.tar.gz"
-      sha256 "a18d01ca3497b1f80eaafc4cd2199059153562a6430a217728dd789681d4d138"
+      url "https://github.com/en9inerd/ctype/releases/download/v0.1.2/ctype_x86_64-linux-musl.tar.gz"
+      sha256 "1713910a474365f4c6caf9c996d32c11850d79898757b4750c80d55195adbc19"
     end
   end
 
