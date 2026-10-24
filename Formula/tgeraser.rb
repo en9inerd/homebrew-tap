@@ -2,25 +2,25 @@ class Tgeraser < Formula
   desc "Delete all your Telegram messages without admin privileges"
   homepage "https://github.com/en9inerd/go-tgeraser"
   license "MIT"
-  version "0.4.0"
+  version "0.4.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.0/tgeraser-darwin-arm64"
-      sha256 "d9db94d874f7a922158a0e6f403bc390ad72f1533a4a93ecee71d694a2615190"
+      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.1/tgeraser-darwin-arm64"
+      sha256 "4307bd0cdb4a8817b42edd8a86c107d72cf010510bd566fc20c9b21e7e2dd2d9"
     else
-      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.0/tgeraser-darwin-amd64"
-      sha256 "590d2f27ec544db53f6e1c28d12ed4893cf44d243b391652c2da408ff6efa0e5"
+      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.1/tgeraser-darwin-amd64"
+      sha256 "ef1b9930d3f53284546c73871aa89f27d9889bdae4e09524a84fe68c364b9c46"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.0/tgeraser-linux-arm64"
-      sha256 "a502cf4e709dca0256effdcabace8f22def5ae651fe7429602dce38d596a45ca"
+      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.1/tgeraser-linux-arm64"
+      sha256 "bbc669bfc8c6da418ecc11926bc0adf7e277211cce5a88248f5c7de0ad123ddd"
     else
-      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.0/tgeraser-linux-amd64"
-      sha256 "3ae2f97d6bae9d3c500ffa11dce4f4e1b997aa41d82473962ab9b2f544afaad9"
+      url "https://github.com/en9inerd/go-tgeraser/releases/download/v0.4.1/tgeraser-linux-amd64"
+      sha256 "15f59087037b26f5b3baacf773674d8a09c370e4b37116bc7bfac56f7810a430"
     end
   end
 
