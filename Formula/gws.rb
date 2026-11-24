@@ -2,15 +2,21 @@ class Gws < Formula
   desc "Persistent Ghostty workspaces on top of zmx"
   homepage "https://github.com/en9inerd/gws"
   license "MIT"
-  version "0.0.2"
+  version "0.1.0"
 
-  depends_on arch: :arm64
   depends_on :macos
   depends_on "fzf"
+  depends_on "neurosnap/tap/zmx"
 
   on_macos do
-    url "https://github.com/en9inerd/gws/releases/download/v0.0.2/gws_aarch64-macos.tar.gz"
-    sha256 "19391ac2c97b11715d1aacc0486f0c4cbb57117a6892d9748c08c579394e3a6e"
+    on_arm do
+      url "https://github.com/en9inerd/gws/releases/download/v0.1.0/gws_aarch64-macos.tar.gz"
+      sha256 "36b4ee9cdf2efb18d5612ba1a90df7203798a10f1795c90ca998eeaa7988e322"
+    end
+    on_intel do
+      url "https://github.com/en9inerd/gws/releases/download/v0.1.0/gws_x86_64-macos.tar.gz"
+      sha256 "adc77cd6db2d2b6b857c21b7778c8ac6ebf92da68e8d547876a95aa4ea17bed0"
+    end
   end
 
   def install
